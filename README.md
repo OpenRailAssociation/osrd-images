@@ -31,6 +31,12 @@ Build osrd-images with an example infrastructure:
 # TODO
 ```
 
+## Contributing
+
+To comply with the [DCO](http://developercertificate.org/), all commits must
+include a Signed-off-by line. You can find more information about this here:
+[osrd.fr/docs/guides/contribute/contribute-code/commit-conventions/#the-developer-certificate-of-origin](https://osrd.fr/en/docs/guides/contribute/contribute-code/commit-conventions/#the-developer-certificate-of-origin)
+
 ## Get in touch
 
 Send an email at <contact@osrd.fr>, [open an issue](https://github.com/OpenRailAssociation/osrd/issues/new?labels=kind%3Aquestion&template=question.yaml), or join the [#public-general:osrd.fr](https://matrix.to/#/#public-general:osrd.fr) matrix channel.
