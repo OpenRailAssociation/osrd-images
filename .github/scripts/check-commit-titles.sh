@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Copyright © 2022 The OSRD Contributors
+#
+# SPDX-License-Identifier: LGPL-3.0-only
+
 # This script reads newline separated commit titles from stdin
 # output an error message when titles are deemed invalid,
 # and exits accordingly

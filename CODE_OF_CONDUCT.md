@@ -1,3 +1,8 @@
+<!--
+Copyright © 2022 The OSRD Contributors
+
+SPDX-License-Identifier: LGPL-3.0-only
+-->
 
 # Contributor Covenant Code of Conduct
 
