@@ -37,6 +37,13 @@ Build osrd-images with an example infrastructure:
 # TODO
 ```
 
+## Add a new category of images
+
+To add new image categories, you must:
+- Add a new folder named after the category in the ```/src``` folder.
+- Add an image representing the category (```category.png``` or ```category.jpeg``` or category.jpg) with its ```.license``` file in the ```/src``` folder.
+- Add the images in each category with their ```.license``` files
+
 ## Get in touch
 
 Send an email at <contact@osrd.fr>, [open an issue](https://github.com/OpenRailAssociation/osrd/issues/new?labels=kind%3Aquestion&template=question.yaml), or join the [#public-general:osrd.fr](https://matrix.to/#/#public-general:osrd.fr) matrix channel.
