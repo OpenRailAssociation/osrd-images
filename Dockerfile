@@ -1,17 +1,23 @@
-# Copyright © 2022 The OSRD Contributors
-#
-# SPDX-License-Identifier: LGPL-3.0-only
+    # Copyright © 2022 The OSRD Contributors
+    #
+    # SPDX-License-Identifier: LGPL-3.0-only
 
-FROM python:3.10-slim as builder
+    FROM python:3.10-slim as builder
 
-WORKDIR /app
+    WORKDIR /app
 
-COPY . /app/osrd-images/
+    COPY . /app/osrd-images/
 
-RUN python /app/osrd-images/scripts/generate.py > /app/osrd-images/image_path.json
+    RUN python /app/osrd-images/scripts/generate.py > /app/osrd-images/image_path.json
 
-FROM nginx:alpine
+    FROM nginx:alpine
 
-COPY --from=builder ./app/osrd-images/ /usr/share/nginx/html/
+    COPY nginx.conf /etc/nginx/conf.d
+    COPY nginx-entrypoint.sh /entrypoint.sh
 
-EXPOSE 80
+    COPY --from=builder ./app/osrd-images/ /srv
+
+    ENTRYPOINT ["/entrypoint.sh"]
+    CMD ["nginx", "-g", "daemon off;"]
+
+    EXPOSE 80
