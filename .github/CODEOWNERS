@@ -2,6 +2,15 @@
 #
 # SPDX-License-Identifier: LGPL-3.0-only
 
-
-/                                                        @openrailassociation/OSRD-Front
+# --- CI - CODEOWNERS - Dependabot - Template ---
 /.github                                                 @openrailassociation/OSRD-DevOps
+/Dockerfile                                              @openrailassociation/OSRD-DevOps
+/nginx.*                                                 @openrailassociation/OSRD-DevOps
+/.github/CODEOWNERS                                      @openrailassociation/OSRD-Admins
+/*.md                                                    @openrailassociation/OSRD-Admins
+/LICENSES                                                @openrailassociation/OSRD-Admins
+/assets                                                  @openrailassociation/OSRD-Admins
+
+
+# --- IMAGES - CATEGORIES ---
+/src                                                     @openrailassociation/OSRD-Front
