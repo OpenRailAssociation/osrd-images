@@ -12,7 +12,6 @@ RUN python /app/osrd-images/scripts/generate.py > /app/osrd-images/image_path.js
 FROM nginx:alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY nginx-entrypoint.sh /entrypoint.sh
-COPY --from=builder ./app/osrd-images/assets /srv/assets
 COPY --from=builder ./app/osrd-images/image_path.json /srv/image_path.json
 COPY --from=builder ./app/osrd-images/src /srv/src
 
