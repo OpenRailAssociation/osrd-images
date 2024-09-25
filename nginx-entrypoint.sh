@@ -2,6 +2,6 @@
 
 : "${NGINX_PORT:=80}"
 
-sed -i "s|%NGINX_PORT%|${NGINX_PORT}|g" /etc/nginx/conf.d/nginx.conf
+sed -i "s|%NGINX_PORT%|${NGINX_PORT}|g" /etc/nginx/conf.d/default.conf
 
 exec "$@"
