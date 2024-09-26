@@ -34,16 +34,35 @@ Check out: [OSRD primary repository](https://github.com/OpenRailAssociation/osrd
 Build osrd-images with an example infrastructure:
 
 ```sh
-# TODO
+docker build -t osrd-images .
+```
+
+Run osrd-images on port 8080
+
+```sh
+docker run -p -d 8080:80 osrd-images
+```
+
+Test the server response and check that the schema of the json file `image_path.json` matches the structure of the src folder 
+
+```sh
+curl https://localhost:8080/image_path.json
 ```
 
 ## Add a new category of images
 
-To add new image categories, you must:
+To add new image categories, you must :
 - Add a new folder named after the category in the ```/src``` folder.
 - Add an image representing the category (```category.png``` or ```category.jpeg``` or category.jpg) with its ```.license``` file in the ```/src``` folder.
 - Add the images in each category with their ```.license``` files
 
+### Requirements
+
+ <img src="assets/dimensions_and_weight.png" alt="Dimensions and weightt"/>
+
+Added images must have a 3:2 aspect ratio. 
+For the moment, the dimensions and sizes accepted are those shown in the image below. <br>
+The recommended format is <strong> medium</strong>. 
 ## Get in touch
 
 Send an email at <contact@osrd.fr>, [open an issue](https://github.com/OpenRailAssociation/osrd/issues/new?labels=kind%3Aquestion&template=question.yaml), or join the [#public-general:osrd.fr](https://matrix.to/#/#public-general:osrd.fr) matrix channel.
