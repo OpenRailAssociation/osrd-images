@@ -22,6 +22,11 @@ SPDX-License-Identifier: LGPL-3.0-only
   <a href="https://github.com/OpenRailAssociation/osrd/blob/dev/LICENSE"><img src="https://img.shields.io/badge/license-LGPL-blue.svg" alt="LGPL License badge" /></a>
 </p>
 
+
+> [!IMPORTANT]
+> This repository is archived and is no longer used by OSRD.
+> If you want more information on OSRD please check out our main repository: https://github.com/OpenRailAssociation/osrd
+
 ## OSRD-IMAGES
 
 This repository is used to supply (royalty-free) images to OSRD for default
@@ -43,7 +48,7 @@ Run osrd-images on port 8080
 docker run -p -d 8080:80 osrd-images
 ```
 
-Test the server response and check that the schema of the json file `image_path.json` matches the structure of the src folder 
+Test the server response and check that the schema of the json file `image_path.json` matches the structure of the src folder
 
 ```sh
 curl https://localhost:8080/image_path.json
@@ -60,9 +65,9 @@ To add new image categories, you must :
 
  <img src="assets/dimensions_and_weight.png" alt="Dimensions and weightt"/>
 
-Added images must have a 3:2 aspect ratio. 
+Added images must have a 3:2 aspect ratio.
 For the moment, the dimensions and sizes accepted are those shown in the image below. <br>
-The recommended format is <strong> medium</strong>. 
+The recommended format is <strong> medium</strong>.
 ## Get in touch
 
 Send an email at <contact@osrd.fr>, [open an issue](https://github.com/OpenRailAssociation/osrd/issues/new?labels=kind%3Aquestion&template=question.yaml), or join the [#public-general:osrd.fr](https://matrix.to/#/#public-general:osrd.fr) matrix channel.
